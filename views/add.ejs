@@ -1,0 +1,25 @@
+<% layout("boilerplate") -%>
+
+    <div class="container border-info bg-light mt-2">
+        <form action="/comments" method="POST">
+
+            <div class="mt-3 mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" id="author" class="form-control" aria-label="Author" name="author">
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" class="form-control" aria-label="Title" name="title">
+            </div>
+
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" style="height: 100px" name="comment"></textarea>
+            </div>
+
+            <button type="submit" class="mb-2 btn btn-primary">Submit</button>
+
+
+        </form>
+    </div>

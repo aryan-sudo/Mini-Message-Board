@@ -1,0 +1,27 @@
+<% layout("boilerplate") -%>
+    <form action="/comments/add" method="GET">
+        <div class="d-grid gap-2 mt-3">
+            <button class=" adder btn btn-primary" type="submit">Add new comment</button>
+        </div>
+    </form>
+    <% for(let a of see) {%>
+        <div class="card text-center mb-3 mt-3 border-info">
+            <div class="card-header">
+                Posted by <span>
+                    <%= a.author %>
+                </span>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= a.title %>
+                </h5>
+                <p class="card-text">
+                    <%= a.comment %>
+                </p>
+                <a href="/comments/<%=a._id  %>" class="btn btn-primary">View</a>
+            </div>
+            <div class="card-footer text-muted">
+                <%=a.updated %>
+            </div>
+        </div>
+        <% } %>
