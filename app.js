@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const engine = require("ejs-mate");
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 //const ejs = require("ejs");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
