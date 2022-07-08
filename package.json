@@ -18,5 +18,8 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.2.2",
     "wjs": "^4.2.5"
+  },
+  "engines": {
+    "node": "16.14.0"
   }
 }
