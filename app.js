@@ -12,6 +12,11 @@ const connectionParams = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 };
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 mongoose
   .connect(DB_URL, connectionParams)
   .then(() => {
