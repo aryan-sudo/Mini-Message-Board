@@ -23,7 +23,8 @@ router.get("/add", async (req, res) => {
 
 router.get("/addapi", async (req, res) => {
   const finder = await User.find({});
-  res.send(finder);
+  console.log(finder);
+  res.send(Object.values(finder));
 });
 
 router.get("/:id", async (req, res) => {
