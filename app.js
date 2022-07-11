@@ -1,5 +1,6 @@
 //const { Console } = require("console");
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const engine = require("ejs-mate");
 require("dotenv").config();
